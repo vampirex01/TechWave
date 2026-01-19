@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+}
+
+/* Common CSS */
+.lg-color {
+  background: linear-gradient(
+    20deg,
+    rgba(247, 233, 63, 1) 0%,
+    rgba(251, 9, 180, 1) 51%,
+    rgba(145, 0, 248, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lenier-gr {
+  background: linear-gradient(
+    20deg,
+    rgba(247, 233, 63, 1) 0%,
+    rgba(251, 9, 180, 1) 51%,
+    rgba(145, 0, 248, 1) 100%
+  );
+}
+
+.btn-1 {
+  padding: 13px 16px;
+  border: none;
+  border-radius: 10000px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+/* specific CSS */
+header {
+  background-color: #1a0b2e;
+  padding: 30px 0;
+}
+nav {
+  display: flex;
+  max-width: 1600px;
+  width: 75%;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  /* background-color: #1a0b2e; */
+}
+
+.nav-logo h1 {
+  font-size: 44px;
+  font-weight: 800;
+  color: white;
+  /* -webkit-text-stroke: 0.3px black; */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  align-items: center;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  /* text-align: center; */
+}
