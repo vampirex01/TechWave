@@ -36,6 +36,33 @@
   font-size: 16px;
   font-weight: 600;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.btn-2 {
+  padding: 12px 20px;
+  border: 2px solid #00ff88;
+  background-color: transparent;
+  color: #00ff88;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.paragraph {
+  color: #ffffffcc;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 /* specific CSS */
@@ -43,6 +70,14 @@ header {
   background-color: #1a0b2e;
   padding: 30px 0;
 }
+
+header hr {
+  margin-top: 24px;
+  border: 1px solid #3a1768;
+  /* height: 1px; */
+  /* background-color: #190534; */
+}
+
 nav {
   display: flex;
   max-width: 1600px;
@@ -50,14 +85,12 @@ nav {
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
-  /* background-color: #1a0b2e; */
 }
 
 .nav-logo h1 {
   font-size: 44px;
   font-weight: 800;
   color: white;
-  /* -webkit-text-stroke: 0.3px black; */
 }
 
 nav ul {
@@ -72,7 +105,6 @@ nav ul li a {
   font-weight: 500;
   color: white;
   cursor: pointer;
-  /* text-align: center; */
 }
 
 nav .ham-icon {
@@ -80,6 +112,80 @@ nav .ham-icon {
   color: white;
 }
 
+/* Hero section */
+.hero {
+  background-image: url(../assets/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero .hero-container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1600px;
+  width: 75%;
+}
+
+.hero-container .hero-img {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.hero-container .hero-img .h-circle {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 50%; */
+}
+
+.hero-container .hero-img .h-mike {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-container .hero-img .h-badge {
+  position: absolute;
+  background-color: #00ff88;
+  color: #1a0b2e;
+  top: 12px;
+  right: 30px;
+  padding: 8px 16px;
+  border-radius: 1000px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: #00ff88 0px 0px 8px 0px;
+}
+
+.hero-container .hero-text {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.hero-container .hero-text h1 {
+  font-size: 60px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.hero-container .hero-text p {
+  margin-bottom: 24px;
+}
+
+.hero-container .h-btn {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+/* Media query for responsiveness */
 @media screen and (max-width: 576px) {
   nav .nav-link,
   nav .nav-button {
