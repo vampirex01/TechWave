@@ -389,6 +389,61 @@ nav .ham-icon {
   color: #00ff88;
 }
 
+/* Host section */
+#host {
+  background-color: #1a0b2e;
+}
+
+#host .host-container {
+  max-width: 1600px;
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+.host-container .host-profile {
+  background-color: #35116572;
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start;
+  border: none;
+  border-radius: 40px;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.host-profile .host-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.host-profile .host-info h3 {
+  margin-bottom: 16px;
+}
+
+.host-profile .host-info p {
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.host-profile .host-info .h-socials {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.host-profile .host-info .h-socials a {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #533c72;
+}
+
 /* Media query for responsiveness */
 @media screen and (max-width: 576px) {
   nav .nav-link,
@@ -496,6 +551,24 @@ nav .ham-icon {
     font-size: 20px;
     text-align: left;
   }
+
+  /* Host section for small devices */
+  .host-container h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .host-container .host-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .host-container .host-profile h3 {
+    font-size: 24px;
+  }
+  .host-profile .host-info .h-socials {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -531,5 +604,17 @@ nav .ham-icon {
   .ep-videos .video h3 {
     font-size: 20px;
     text-align: left;
+  }
+
+  /* Host section for small devices */
+
+  .host-container .host-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .host-profile .host-info .h-socials {
+    justify-content: center;
   }
 }
