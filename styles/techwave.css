@@ -444,6 +444,52 @@ nav .ham-icon {
   border: 1px solid #533c72;
 }
 
+footer {
+  background-image: url(../assets/footer-bg.png);
+  padding: 120px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer .f-container {
+  max-width: 1600px;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer .f-container h1 {
+  font-size: 60px;
+  font-weight: 800;
+  color: white;
+}
+
+.f-container .social {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+
+  /* align-items: center; */
+}
+.f-container .social .f-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.f-container .social .f-social img {
+  width: 20px;
+  height: 20px;
+}
+
 /* Media query for responsiveness */
 @media screen and (max-width: 576px) {
   nav .nav-link,
