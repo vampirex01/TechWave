@@ -80,6 +80,14 @@
   align-items: center;
 }
 
+.common-h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  margin: 16px 0;
+  text-transform: capitalize;
+}
+
 /* specific CSS */
 header {
   background-color: #1a0b2e;
@@ -240,6 +248,80 @@ nav .ham-icon {
 .about-rating p {
   margin-top: 16px;
   text-transform: uppercase;
+}
+
+/* why us section */
+.why-us {
+  background-color: #230e3d;
+}
+
+.wus-container {
+  max-width: 1600px;
+  width: 75%;
+  margin: 0 auto;
+  padding: 120px 0;
+  text-align: center;
+}
+.wus-container h2 {
+  /* margin-top: 120px; */
+  margin-bottom: 40px;
+}
+.wus-container .cards-grid .left-c {
+  grid-area: left;
+}
+
+.wus-container .cards-grid .long-c1 {
+  grid-area: long1;
+}
+
+.wus-container .cards-grid .long-c2 {
+  grid-area: long2;
+}
+
+.wus-container .cards-grid .long-c3 {
+  grid-area: long3;
+}
+
+.wus-container .cards-grid .right-c {
+  grid-area: right;
+}
+
+.wus-container .cards-grid {
+  display: grid;
+  grid-template-areas:
+    "left long1 long1"
+    "left long2 long2"
+    "long3 long3 right";
+  gap: 20px;
+}
+
+.wus-container .gcard {
+  background-color: #351165;
+  border: none;
+  border-radius: 40px;
+  padding: 40px;
+}
+
+.wus-container .gcard img {
+  max-width: 60px;
+  max-height: 60px;
+  width: auto;
+}
+
+.wus-container .left-c,
+.wus-container .right-c,
+.wus-container .long-c1,
+.wus-container .long-c2,
+.wus-container .long-c3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  /* padding: 107px auto; */
+}
+
+.wus-container .left-c img {
+  margin-top: 107px;
 }
 
 /* Media query for responsiveness */
