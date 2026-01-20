@@ -263,7 +263,6 @@ nav .ham-icon {
   text-align: center;
 }
 .wus-container h2 {
-  /* margin-top: 120px; */
   margin-bottom: 40px;
 }
 .wus-container .cards-grid .left-c {
@@ -317,11 +316,77 @@ nav .ham-icon {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  /* padding: 107px auto; */
 }
 
 .wus-container .left-c img {
   margin-top: 107px;
+}
+
+/* For Episodes part */
+#episodes {
+  background-color: #1a0b2e;
+}
+
+#episodes .ep-container {
+  max-width: 1600px;
+  width: 75%;
+  margin: 0 auto;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.ep-container h2 {
+  margin-bottom: 24px;
+}
+
+.ep-container .ep-videos {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+.ep-videos .video {
+  background-color: #250d44;
+  max-width: 380px;
+  width: 32%;
+  border: none;
+  border-radius: 20px;
+}
+
+.ep-videos .video iframe {
+  width: 100%;
+  height: 214px;
+  border-radius: 20px 20px 0 0;
+}
+
+.ep-videos .video h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  margin: 24px 24px 12px 24px;
+}
+
+.ep-videos .video p {
+  margin: 0 24px 12px 24px;
+  color: #ffffffcc;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.ep-videos .video .time {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto 24px 24px;
+  gap: 6px;
+}
+
+.ep-videos .video .time span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #00ff88;
 }
 
 /* Media query for responsiveness */
