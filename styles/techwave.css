@@ -394,6 +394,24 @@ nav .ham-icon {
     font-size: 12px;
     line-height: 16px;
   }
+
+  /* Why Choose section for small devices */
+  .wus-container h2 {
+    font-size: 32px;
+  }
+  .wus-container .cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .wus-container .gcard {
+    padding: 24px;
+  }
+
+  .wus-container .left-c img {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
