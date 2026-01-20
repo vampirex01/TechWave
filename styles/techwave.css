@@ -615,6 +615,28 @@ footer .f-container h1 {
   .host-profile .host-info .h-socials {
     justify-content: center;
   }
+
+  footer {
+    padding: 40px 0;
+  }
+  footer .f-container {
+    width: 90%;
+  }
+  footer .f-container h1 {
+    font-size: 40px;
+  }
+  .f-container .social {
+    width: 63%;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 24px 0;
+  }
+  .f-container .social .f-social {
+    margin: 0;
+  }
+  .f-container .social .f-social p {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
