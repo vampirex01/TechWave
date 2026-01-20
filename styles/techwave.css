@@ -477,6 +477,25 @@ nav .ham-icon {
   .wus-container .left-c img {
     margin-top: 0;
   }
+
+  /* Episodes section for small devices */
+  #episodes .ep-container h2 {
+    font-size: 32px;
+  }
+  .ep-container .ep-videos {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ep-videos .video {
+    width: 95%;
+    max-width: none;
+  }
+
+  .ep-videos .video h3 {
+    font-size: 20px;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -494,5 +513,23 @@ nav .ham-icon {
     display: flex;
     font-size: 28px;
     cursor: pointer;
+  }
+
+  #episodes .ep-container h2 {
+    font-size: 32px;
+  }
+  .ep-container .ep-videos {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ep-videos .video {
+    width: 95%;
+    max-width: none;
+  }
+
+  .ep-videos .video h3 {
+    font-size: 20px;
+    text-align: left;
   }
 }
