@@ -29,6 +29,10 @@
   );
 }
 
+.about {
+  background-color: #1a0b2e;
+}
+
 .btn-1 {
   padding: 13px 16px;
   border: none;
@@ -63,6 +67,17 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+}
+
+.common-h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  text-transform: capitalize;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* specific CSS */
@@ -185,6 +200,48 @@ nav .ham-icon {
   justify-content: center;
   gap: 8px;
 }
+
+/* About Section */
+
+.about-container {
+  max-width: 1600px;
+  width: 75%;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-container .about-info h2 {
+  margin-bottom: 16px;
+}
+
+.about-container .about-info p {
+  margin: 0 auto;
+  max-width: 800px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.about-container hr {
+  border: 1px solid #ffffff56;
+  margin: 80px 0;
+}
+
+.about-container .about-rating {
+  display: flex;
+  gap: 80px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about-rating h2 {
+  color: #00ff88 !important;
+}
+.about-rating p {
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+
 /* Media query for responsiveness */
 @media screen and (max-width: 576px) {
   nav .nav-link,
@@ -245,6 +302,15 @@ nav .ham-icon {
   .btn-2 {
     font-size: 14px;
     padding: 12px 16px;
+  }
+
+  /* About section for small devices */
+  .about-container .about-info h2 {
+    font-size: 40px;
+  }
+  .about-container .about-info p {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
